@@ -637,6 +637,7 @@ hr.bold {
 .paddingtop-80{padding-top:80px !important;}
 .paddingtop-90{padding-top:90px !important;}
 .paddingtop-100{padding-top:100px !important;}
+.paddingtop-150{padding-top:150px !important;}
 
 .paddingbot-0{padding-bottom:0 !important;}
 .paddingbot-10{padding-bottom:10px !important;}
@@ -658,7 +659,7 @@ hr.bold {
 .home-section {
     padding-top: 150px;
 	display:block;
-    position:relative;
+    position:inherit;
     z-index:120;
 	background-color: #fff;
 }
@@ -668,7 +669,7 @@ hr.bold {
     padding-top: 0;
     padding-bottom: 0;
 	display:block;
-    position:relative;
+    position:inherit;
     z-index:120;
 }
 .home-section.nopadding-bot {

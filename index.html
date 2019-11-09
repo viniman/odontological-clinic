@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,8 @@
   <!-- css -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="font-awesome/css/solid.min.css" rel="stylesheet" type="text/css" />
+  <link href="font-awesome/css/brands.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
   <link href="css/nivo-lightbox.css" rel="stylesheet" />
   <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
@@ -19,11 +21,10 @@
   <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
   <link href="css/animate.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet">
+  <link id="t-colors" href="css/default-color-index.css" rel="stylesheet">
 
-  <!-- boxed bg -->
-  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
-  <!-- template skin -->
-  <link id="t-colors" href="color/default.css" rel="stylesheet">
+  <!-- The fav icon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
 
   <!-- =======================================================
     Template Retirado no site bootstrapmade e editado pelos
@@ -60,7 +61,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
           <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="" width="150" height="40" />
+                    <img src="img/logo.png" alt="" width="210" height="40" />
                 </a>
         </div>
 
@@ -68,9 +69,8 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#intro">Home</a></li>
-            <li><a href="#service">Service</a></li>
+            <li><a href="#service">Serviços</a></li>
             <li><a href="#doctor">Dentistas</a></li>
-            <li><a href="#facilities">Facilities</a></li>
             <li class="dropdown">
             <li><a href="login.html">Login</a></li>
             </li>
@@ -153,6 +153,7 @@
                               <div class="validation"></div>
                             </div>
                           </div>
+
                           <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
                               <label>Data</label>
@@ -219,7 +220,9 @@
 
 
     <!-- Section: services -->
-    <section id="service" class="home-section nopadding paddingtop-60">
+
+    <!-- Primeira Coluna -->
+    <section id="service" class="home-section nopadding paddingtop-150 transparent-border-more">
 
       <div class="container">
 
@@ -234,7 +237,7 @@
             <div class="wow fadeInRight" data-wow-delay="0.1s">
               <div class="service-box">
                 <div class="service-icon">
-                  <span class="fa fa-stethoscope fa-3x"></span>
+                  <span class="fas fa-tooth fa-3x"></span>
                 </div>
                 <div class="service-desc">
                   <h5 class="h-light">Endodontia</h5>
@@ -246,7 +249,7 @@
             <div class="wow fadeInRight" data-wow-delay="0.2s">
               <div class="service-box">
                 <div class="service-icon">
-                  <span class="fa fa-wheelchair fa-3x"></span>
+                  <span class="fas fa-radiation fa-3x"></span>
                 </div>
                 <div class="service-desc">
                   <h5 class="h-light">Radiologia Odontológica</h5>
@@ -257,23 +260,24 @@
             <div class="wow fadeInRight" data-wow-delay="0.3s">
               <div class="service-box">
                 <div class="service-icon">
-                  <span class="fa fa-plus-square fa-3x"></span>
+                  <span class="fas fa-teeth fa-3x"></span>
                 </div>
                 <div class="service-desc">
-                  <h5 class="h-light">Prótese Buco – Maxilo – Facial</h5>
-                  <p>Vestibulum tincidunt enim in pharetra malesuada.</p>
+                  <h5 class="h-light">Próteses </h5>
+                  <p>Buco – Maxilo – Facial </p>
                 </div>
               </div>
             </div>
 
 
+          <!-- Segunda Coluna-->
           </div>
           <div class="col-sm-3 col-md-3">
 
             <div class="wow fadeInRight" data-wow-delay="0.1s">
               <div class="service-box">
                 <div class="service-icon">
-                  <span class="fa fa-h-square fa-3x"></span>
+                  <span class="fa fa-hospital fa-3x"></span>
                 </div>
                 <div class="service-desc">
                   <h5 class="h-light">Odontogeriatria</h5>
@@ -285,7 +289,7 @@
             <div class="wow fadeInRight" data-wow-delay="0.2s">
               <div class="service-box">
                 <div class="service-icon">
-                  <span class="fa fa-filter fa-3x"></span>
+                  <span class="fa fa-child fa-3x"></span> <!-- fa-filter-->
                 </div>
                 <div class="service-desc">
                   <h5 class="h-light">Odontopediatria</h5>
@@ -431,72 +435,31 @@
           <div class="col-sm-6 col-md-4">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>About Medicio</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
-                </p>
-              </div>
-            </div>
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
-              <div class="widget">
-                <h5>Information</h5>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Laboratory</a></li>
-                  <li><a href="#">Medical treatment</a></li>
-                  <li><a href="#">Terms & conditions</a></li>
-                </ul>
+                <h5>Onde nos encontrar</h5>
+                <p>Av Brasil 3333, Juiz de Fora - Minas Gerais, </br>Brasil 36020-000</p>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>Medicio center</h5>
+                <h5>Odonto Clinic</h5>
                 <p>
                   Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
                 </p>
-                <ul>
-                  <li>
-                    <span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
-								</span> Monday - Saturday, 8am to 10pm
-                  </li>
-                  <li>
-                    <span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-								</span> +62 0888 904 711
-                  </li>
-                  <li>
-                    <span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-								</span> hello@medicio.com
-                  </li>
-
-                </ul>
               </div>
             </div>
           </div>
           <div class="col-sm-6 col-md-4">
             <div class="wow fadeInDown" data-wow-delay="0.1s">
               <div class="widget">
-                <h5>Our location</h5>
-                <p>The Suithouse V303, Kuningan City, Jakarta Indonesia 12940</p>
-
-              </div>
-            </div>
-            <div class="wow fadeInDown" data-wow-delay="0.1s">
-              <div class="widget">
-                <h5>Follow us</h5>
+                <h5>Nossas redes sociais</h5>
                 <ul class="company-social">
-                  <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                  <li class="social-dribble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li class="social-facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                  <li class="social-twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></li> <!-- fa fa-twitter -->
+                  <li class="social-google"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                  <li class="social-vimeo"><a href="#"><i class="fab fa-vimeo-square"></i></a></li>
+                  <li class="social-dribble"><a href="#"><i class="fab fa-dribbble-square"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -534,7 +497,7 @@
     </footer>
 
   </div>
-  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up active bring-to-front"></i></a>
 
   <!-- Core JavaScript Files -->
   <script src="js/jquery.min.js"></script>
