@@ -1,682 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+
+
 <head>
-    <!--
-        ===
-        This comment should NOT be removed.
-
-        Charisma v2.0.0
-
-        Copyright 2012-2014 Muhammad Usman
-        Licensed under the Apache License v2.0
-        http://www.apache.org/licenses/LICENSE-2.0
-
-        http://usman.it
-        http://twitter.com/halalit_usman
-        ===
-    -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Clínica Odontológica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-    <meta name="author" content="Muhammad Usman">
-
-    <!-- The styles -->
-    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
-
-    <link href="css/charisma-app.css" rel="stylesheet">
-    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
-    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
-    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
-    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
-    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
-    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
-    <link href='css/jquery.noty.css' rel='stylesheet'>
-    <link href='css/noty_theme_default.css' rel='stylesheet'>
-    <link href='css/elfinder.min.css' rel='stylesheet'>
-    <link href='css/elfinder.theme.css' rel='stylesheet'>
-    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-    <link href='css/uploadify.css' rel='stylesheet'>
-    <link href='css/animate.min.css' rel='stylesheet'>
-
-    <!-- jQuery -->
-    <script src="bower_components/jquery/jquery.min.js"></script>
-
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- The fav icon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-    <!-- topbar starts -->
-    <div class="navbar navbar-default" role="navigation">
-
-        <div class="navbar-inner">
-            <button type="button" class="navbar-toggle pull-left animated flip">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="admin_ui.html"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
-                <span><!--Clínica Odontológica--></span></a>
-
-            <!-- user dropdown starts -->
-            <div class="btn-group pull-right">
-                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> admin</span>
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
-                    <li class="divider"></li>
-                    <li><a href="login.html">Logout</a></li>
-                </ul>
-            </div>
-            <!-- user dropdown ends -->
-
-
-            <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="index.html"><i class="glyphicon glyphicon-globe"></i> Visitar página principal </a></li>
-            </ul>
-
-        </div>
-    </div>
-    <!-- topbar ends -->
-<div class="ch-container">
-    <div class="row">
-        
-        <!-- left menu starts -->
-        <div class="col-sm-2 col-lg-2">
-            <div class="sidebar-nav">
-                <div class="nav-canvas">
-                    <div class="nav-sm nav nav-stacked">
-
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+                <a href="index-2.html" class="logo">
+                        <img src="assets/img/logo.png" width="38" height="35" alt=""> 
+                        <span><img src="assets/img/logo-nome.png" width="125" height="35"></span>
+                </a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notificações</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 minutos atrás</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+												<p class="noti-time"><span class="notification-time">6 minutos atrás</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">L</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+												<p class="noti-time"><span class="notification-time">8 minutos atrás</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">G</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+												<p class="noti-time"><span class="notification-time">12 minutos atrás</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Júlia Lindoia</span> added new task <span class="noti-title">Private chat module</span></p>
+												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">Todas Notificações</a>
+                        </div>
                     </div>
-                    <ul class="nav nav-pills nav-stacked main-menu">
-                        <li class="nav-header">Main</li>
-                        <li><a class="ajax-link" href="admin_ui.html"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
+                </li>
+                
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img">
+							<img class="rounded-circle" src="assets/img/user.jpg" width="24" alt="Admin">
+							<span class="status online"></span>
+						</span>
+						<span>Usuario</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="profile.html">Meu Perfil</a>
+						<a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
+                        <a class="dropdown-item" href="settings.html">Configurações</a>
+                        <a class="dropdown-item" href="index.html">Página Paciente</a>
+						<a class="dropdown-item" href="index.html">Sair</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                    <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
+                    <a class="dropdown-item" href="settings.html">Configurações</a>
+                    <a class="dropdown-item" href="index.html">Página Paciente</a>
+                    <a class="dropdown-item" href="index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-dashboard"></i> <span>Tela Inicial</span></a>
                         </li>
-                        <li><a class="ajax-link" href="ui.html"><i class="glyphicon glyphicon-eye-open"></i><span> UI Features</span></a>
+						<li>
+                            <a href="dentists.html"><i class="fa fa-user-md"></i> <span>Dentistas</span></a>
                         </li>
-                        <li><a class="ajax-link" href="form.html"><i
-                                    class="glyphicon glyphicon-edit"></i><span> Cadastro de usuários</span></a></li>
-                        <li><a class="ajax-link" href="form.html"><i
-                            class="glyphicon glyphicon-edit"></i><span> Cadastro de pacientes</span></a></li>
-                        <li><a class="ajax-link" href="form.html"><i
-                            class="glyphicon glyphicon-edit"></i><span> Cadastro de fornecedores</span></a></li>
-                        <li><a class="ajax-link" href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span> Controle Financeiro</span></a>
+                        <li>
+                            <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                         </li>
-                        <li><a class="ajax-link" href="typography.html"><i class="glyphicon glyphicon-font"></i><span> Typography</span></a>
+                        <li>
+                                <a href="calendar.html"><i class="fa fa-calendar"></i> <span>Calendário</span></a>
                         </li>
-                        <li><a class="ajax-link" href="gallery.html"><i class="glyphicon glyphicon-picture"></i><span> Gallery</span></a>
+                        <li>
+                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Próximas Consultas</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
                         </li>
-                        <li class="nav-header hidden-md">Sample Section</li>
-                        <li><a class="ajax-link" href="table.html"><i
-                                    class="glyphicon glyphicon-align-justify"></i><span> Tables</span></a></li>
-                        <li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Accordion Menu</span></a>
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Child Menu 1</a></li>
-                                <li><a href="#">Child Menu 2</a></li>
+                        <li>
+                            <a href="schedule.html"><i class="fa fa-calendar-check-o"></i> <span>Horários Atendimento</span></a>
+                        </li>
+                        <li>
+                            <a href="departments.html"><i class="fa fa-hospital-o"></i> <span>Departments</span></a>
+                        </li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-user"></i> <span> Employees </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="employees.html">Employees List</a></li>
+								<li><a href="leaves.html">Leaves</a></li>
+								<li><a href="holidays.html">Holidays</a></li>
+								<li><a href="attendance.html">Attendance</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-money"></i> <span> Gerenciar Caixas </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="invoices.html">Incluir Ganho</a></li>
+								<li><a href="payments.html">Pagamentos</a></li>
+								<li><a href="expenses.html">Incluir Gastos</a></li>
+								<li><a href="provident-fund.html">Visualização Lucros</a></li>
+							</ul>
+                        </li>
+                        <li class="submenu">
+                                <a href="#"><i class="fa fa-money"></i> <span> Emissões </span> <span class="menu-arrow"></span></a>
+                                <ul style="display: none;">
+                                    <li><a href="#">Atestados</a></li>
+                                    <li><a href="#">Prontuários</a></li>
+                                    <li><a href="#">Receitas</a></li>
+                                    <li><a href="#">Taxes</a></li>
+                                    <li><a href="#">Provident Fund</a></li>
+                                </ul>
+                            </li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-book"></i> <span> Serviços </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="salary.html"> Employee Salary </a></li>
+								<li><a href="salary-view.html"> Payslip </a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="assets.html"><i class="fa fa-cube"></i> <span>Casos Ortodônticos</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-flag-o"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="expense-reports.html"> Expense Report </a></li>
+								<li><a href="invoice-reports.html"> Invoice Report </a></li>
+							</ul>
+						</li>
+                        <li>
+                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
+                        </li>
+                        <li class="menu-title">UI Elements</li>
+                        <li class="submenu">
+                            <a href="#"><i class="fa fa-laptop"></i> <span> Components</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="uikit.html">UI Kit</a></li>
+                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="tabs.html">Tabs</a></li>
                             </ul>
                         </li>
-                        <li><a class="ajax-link" href="calendar.html"><i class="glyphicon glyphicon-calendar"></i><span> Consultas</span></a>
+                        <li class="submenu">
+                            <a href="#"><i class="fa fa-edit"></i> <span> Forms</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="form-basic-inputs.html">Basic Inputs</a></li>
+                                <li><a href="form-input-groups.html">Input Groups</a></li>
+                                <li><a href="form-horizontal.html">Horizontal Form</a></li>
+                                <li><a href="form-vertical.html">Vertical Form</a></li>
+                            </ul>
                         </li>
-                        <li><a class="ajax-link" href="grid.html"><i
-                                    class="glyphicon glyphicon-th"></i><span> Grid</span></a></li>
-                        <li><a href="tour.html"><i class="glyphicon glyphicon-globe"></i><span> Tour</span></a></li>
-                        <li><a class="ajax-link" href="icon.html"><i
-                                    class="glyphicon glyphicon-star"></i><span> Icons</span></a></li>
-                        <li><a href="error.html"><i class="glyphicon glyphicon-ban-circle"></i><span> Error Page</span></a>
+                        <li class="submenu">
+                            <a href="#"><i class="fa fa-table"></i> <span> Tables</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="tables-basic.html">Basic Tables</a></li>
+                                <li><a href="tables-datatables.html">Data Table</a></li>
+                            </ul>
                         </li>
-                        <li><a href="login.html"><i class="glyphicon glyphicon-lock"></i><span> Login Page</span></a>
+
+                        <li class="menu-title">Extras</li>
+                        <li class="submenu">
+                            <a href="#"><i class="fa fa-columns"></i> <span>Pages</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a href="login.html"> Login </a></li>
+                                <li><a href="register.html"> Register </a></li>
+                                <li><a href="forgot-password.html"> Forgot Password </a></li>
+                                <li><a href="change-password2.html"> Change Password </a></li>
+                                <li><a href="lock-screen.html"> Lock Screen </a></li>
+                                <li><a href="profile.html"> Profile </a></li>
+                                <li><a href="gallery.html"> Gallery </a></li>
+                                <li><a href="error-404.html">404 Error </a></li>
+                                <li><a href="error-500.html">500 Error </a></li>
+                                <li><a href="blank-page.html"> Blank Page </a></li>
+                            </ul>
                         </li>
-                    </ul>
-                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
-                </div>
-            </div>
-        </div>
-        <!--/span-->
-        <!-- left menu ends -->
-
-        <noscript>
-            <div class="alert alert-block col-md-12">
-                <h4 class="alert-heading">Warning!</h4>
-
-                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
-                    enabled to use this site.</p>
-            </div>
-        </noscript>
-
-        <div id="content" class="col-lg-10 col-sm-10">
-            <!-- content starts -->
-            <div>
-    <ul class="breadcrumb">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Dashboard</a>
-        </li>
-    </ul>
-</div>
-<div class=" row">
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="6 new members." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-user blue"></i>
-
-            <div>Total Members</div>
-            <div>507</div>
-            <span class="notification">6</span>
-        </a>
-    </div>
-
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="4 new pro members." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-star green"></i>
-
-            <div>Pro Members</div>
-            <div>228</div>
-            <span class="notification green">4</span>
-        </a>
-    </div>
-
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="$34 new sales." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-shopping-cart yellow"></i>
-
-            <div>Sales</div>
-            <div>$13320</div>
-            <span class="notification yellow">$34</span>
-        </a>
-    </div>
-
-    <div class="col-md-3 col-sm-3 col-xs-6">
-        <a data-toggle="tooltip" title="12 new messages." class="well top-block" href="#">
-            <i class="glyphicon glyphicon-envelope red"></i>
-
-            <div>Messages</div>
-            <div>25</div>
-            <span class="notification red">12</span>
-        </a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="box col-md-12">
-        <div class="box-inner">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-info-sign"></i> Introduction</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content row">
-                <div class="col-lg-7 col-md-12">
-                    <h1>Charisma <br>
-                        <small>free, premium quality, responsive, multiple skin admin template.</small>
-                    </h1>
-                    <p>It's a live demo of the template. I have created Charisma to ease the repeat work I have to do on my
-                        projects. Now I re-use Charisma as a base for my admin panel work and I am sharing it with you
-                        :)</p>
-
-                    <p><b>All pages in the menu are functional, take a look at all, please share this with your
-                            followers.</b></p>
-
-                    <p class="center-block download-buttons">
-                        <a href="http://usman.it/free-responsive-admin-template/" class="btn btn-primary btn-lg"><i
-                                class="glyphicon glyphicon-chevron-left glyphicon-white"></i> Back to article</a>
-                        <a href="http://usman.it/free-responsive-admin-template/" class="btn btn-default btn-lg"><i
-                                class="glyphicon glyphicon-download-alt"></i> Download Page</a>
-                    </p>
-                </div>
-                <!-- Ads, you can remove these -->
-                <div class="col-lg-5 col-md-12 hidden-xs center-text">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Charisma Demo 4 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:336px;height:280px"
-                         data-ad-client="ca-pub-5108790028230107"
-                         data-ad-slot="9467443105"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-
-                <div class="col-lg-5 col-md-12 visible-xs center-text">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Charisma Demo 5 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:250px;height:250px"
-                         data-ad-client="ca-pub-5108790028230107"
-                         data-ad-slot="8957582309"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <!-- Ads end -->
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="box col-md-4">
-        <div class="box-inner homepage-box">
-            <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-th"></i> Tabs</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a href="#info">Info</a></li>
-                    <li><a href="#custom">Custom</a></li>
-                    <li><a href="#messages">Messages</a></li>
-                </ul>
-
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane active" id="info">
-                        <h3>Charisma
-                            <small>a full featured template</small>
-                        </h3>
-                        <p>It's a full featured, responsive template for your admin panel. It's optimized for tablets
-                            and mobile phones.</p>
-
-                        <p>Check how it looks on different devices:</p>
-                        <a href="http://www.responsinator.com/?url=usman.it%2Fthemes%2Fcharisma"
-                           target="_blank"><strong>Preview on iPhone size.</strong></a>
-                        <br>
-                        <a href="http://www.responsinator.com/?url=usman.it%2Fthemes%2Fcharisma"
-                           target="_blank"><strong>Preview on iPad size.</strong></a>
-                    </div>
-                    <div class="tab-pane" id="custom">
-                        <h3>Custom
-                            <small>small text</small>
-                        </h3>
-                        <p>Sample paragraph.</p>
-
-                        <p>Your custom text.</p>
-                    </div>
-                    <div class="tab-pane" id="messages">
-                        <h3>Messages
-                            <small>small text</small>
-                        </h3>
-                        <p>Sample paragraph.</p>
-
-                        <p>Your custom text.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/span-->
-
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-user"></i> Member Activity</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <div class="box-content">
-                    <ul class="dashboard-list">
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Usman"
-                                     src="http://www.gravatar.com/avatar/f0ea51fa1e4fae92608d8affee12f67b.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Usman
-                            </a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label-success label label-default">Approved</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Sheikh Heera"
-                                     src="http://www.gravatar.com/avatar/3232415a0380253cfffe19163d04acab.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Sheikh Heera
-                            </a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label-warning label label-default">Pending</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Abdullah"
-                                     src="http://www.gravatar.com/avatar/46056f772bde7c536e2086004e300a04.png?s=50"></a>
-                            <strong>Name:</strong> <a href="#">Abdullah
-                            </a><br>
-                            <strong>Since:</strong> 25/05/2014<br>
-                            <strong>Status:</strong> <span class="label-default label label-danger">Banned</span>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img class="dashboard-avatar" alt="Sana Amrin"
-                                     src="http://www.gravatar.com/avatar/hash"></a>
-                            <strong>Name:</strong> <a href="#">Sana Amrin</a><br>
-                            <strong>Since:</strong> 17/05/2014<br>
-                            <strong>Status:</strong> <span class="label label-info">Updates</span>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fa fa-share-alt"></i> <span>Cadastros</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="javascript:void(0);"><span>Pacientes</span> <span class="menu-arrow"></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><span>Fornecedores</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><span>Materiais</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);"><span>Medicamentos</span></a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <!--/span-->
-
-    <div class="box col-md-4">
-        <div class="box-inner homepage-box">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list-alt"></i> Keep in touch</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <h3>Stay updated with my projects and blog posts</h3>
-                <!-- Begin MailChimp Signup Form -->
-                <div class="mc_embed_signup">
-                    <form action="//halalit.us3.list-manage.com/subscribe/post?u=444b176aa3c39f656c66381f6&amp;id=eeb0c04e84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div>
-                            <label>Please enter your email</label>
-                            <input type="email" value="" name="EMAIL" class="email" placeholder="Email address" required>
-
-                            <div class="power_field"><input type="text" name="b_444b176aa3c39f656c66381f6_eeb0c04e84" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" class="button"></div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+							<span class="dash-widget-bg1"><i class="fa fa-stethoscope" aria-hidden="true"></i></span>
+							<div class="dash-widget-info text-right">
+								<h3>4</h3>
+								<span class="widget-title1">Dentistas <i class="fa fa-check" aria-hidden="true"></i></span>
+							</div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg2"><i class="fa fa-user-o"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3>153</h3>
+                                <span class="widget-title2">Pacientes <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg3"><i class="fa fa-user-md" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3>12</h3>
+                                <span class="widget-title3">Compareceu <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="dash-widget">
+                            <span class="dash-widget-bg4"><i class="fa fa-heartbeat" aria-hidden="true"></i></span>
+                            <div class="dash-widget-info text-right">
+                                <h3>18</h3>
+                                <span class="widget-title4">Consultas Pendentes <i class="fa fa-check" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!--End mc_embed_signup-->
-                <br/>
-
-                <p>You may like my other open source work, check my profile on <a href="http://github.com/usmanhalalit"
-                                                                                  target="_blank">GitHub</a>.</p>
-
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-8 col-xl-8">
+						<div class="card">
+							<div class="card-header">
+								<h4 class="card-title d-inline-block">Próximas Consultas</h4> <a href="appointments.html" class="btn btn-primary float-right">Visualizar tudo</a>
+							</div>
+							<div class="card-body p-0">
+								<div class="table-responsive">
+									<table class="table mb-0">
+										<thead class="d-none">
+											<tr>
+												<th>Nome Paciente</th>
+												<th>Nome Dentista</th>
+												<th>Horário</th>
+												<th class="text-right">Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td style="min-width: 200px;">
+													<a class="avatar" href="profile.html">B</a>
+													<h2><a href="profile.html">Joia da Minha Vida <span>Juiz de Fora, MG</span></a></h2>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Marcado com</h5>
+													<p>Dra. Ana Beatriz</p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Horário</h5>
+													<p>14:45</p>
+												</td>
+												<td class="text-right">
+													<a href="appointments.html" class="btn btn-outline-primary take-btn">Feito</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="min-width: 200px;">
+													<a class="avatar" href="profile.html">B</a>
+													<h2><a href="profile.html">Gulherminda Gonçalves <span>Juiz de Fora, MG</span></a></h2>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Marcado com</h5>
+													<p>Dra. Ana Beatriz</p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Horário</h5>
+													<p>16:00</p>
+												</td>
+												<td class="text-right">
+													<a href="appointments.html" class="btn btn-outline-primary take-btn">Feito</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="min-width: 200px;">
+													<a class="avatar" href="profile.html">B</a>
+													<h2><a href="profile.html">Júlia Lindoia <span>Juiz de Fora, MG</span></a></h2>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Marcado com</h5>
+													<p>Dr. Alberto Lindenberg</p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Horário</h5>
+													<p>15:00</p>
+												</td>
+												<td class="text-right">
+													<a href="appointments.html" class="btn btn-outline-primary take-btn">Feito</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="min-width: 200px;">
+													<a class="avatar" href="profile.html">B</a>
+													<h2><a href="profile.html">Alberto Mineiro <span>Juiz de Fora, MG</span></a></h2>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Marcado com</h5>
+													<p>Dr. Júlio Casto</p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Horário</h5>
+													<p>15:30</p>
+												</td>
+												<td class="text-right">
+													<a href="appointments.html" class="btn btn-outline-primary take-btn">Feito</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="min-width: 200px;">
+													<a class="avatar" href="profile.html">B</a>
+													<h2><a href="profile.html">Carlos Bejani <span>Juiz de Fora, MG</span></a></h2>
+												</td>                 
+												<td>
+													<h5 class="time-title p-0">Marcado com</h5>
+													<p>Dr. Ana Beatriz</p>
+												</td>
+												<td>
+													<h5 class="time-title p-0">Horário</h5>
+													<p>16:50</p>
+												</td>
+												<td class="text-right">
+													<a href="appointments.html" class="btn btn-outline-primary take-btn">Feito</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card member-panel">
+							<div class="card-header bg-white">
+								<h4 class="card-title mb-0">Dentistas</h4>
+							</div>
+                            <div class="card-body">
+                                <ul class="contact-list">
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="John Doe"><img src="assets/img/dentistas/1.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis">Ana Beatriz</span>
+                                                <span class="contact-date">Odontopediatria</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="Richard Miles"><img src="assets/img/dentistas/2.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis">João Casagrande</span>
+                                                <span class="contact-date">Protéses</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="John Doe"><img src="assets/img/dentistas/3.jpg" alt="" class="w-40 rounded-circle"><span class="status away"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis">Alberto Lindenberg</span>
+                                                <span class="contact-date">Endodontia</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-cont">
+                                            <div class="float-left user-img m-r-10">
+                                                <a href="profile.html" title="Richard Miles"><img src="assets/img/dentistas/4.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
+                                            </div>
+                                            <div class="contact-info">
+                                                <span class="contact-name text-ellipsis">Júlio Casto</span>
+                                                <span class="contact-date">Endodontia & Radiologia</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer text-center bg-white">
+                                <a href="dentists.html" class="text-muted">Visualizar todos os dentistas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title d-inline-block">Requisições de consultas </h4> <a href="patients.html" class="btn btn-primary float-right">Visualizar tudo</a>
+                                </div>
+                                <div class="card-block">
+                                    <div class="table-responsive">
+                                        <table class="table mb-0 new-patient-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt=""> 
+                                                        <h2>Vicente</h2>
+                                                    </td>
+                                                    <td>vicente@gmail.com</td>
+                                                    <td>(32) 8812-9090</td>
+                                                    <td>15/11 - 13:00</td>
+                                                    <td><button class="btn btn-primary btn-primary-two float-right">Aceitar</button></td>
+                                                    <td><button class="btn btn-primary btn-primary-four float-right">Recusar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt=""> 
+                                                        <h2>Fátima</h2>
+                                                    </td>
+                                                    <td>fatim@yahoo.com</td>
+                                                    <td>(32) 8812-9090</td>
+                                                    <td>27/11 - 13:00</td>
+                                                    <td><button class="btn btn-primary btn-primary-two float-right">Aceitar</button></td>
+                                                    <td><button class="btn btn-primary btn-primary-four float-right">Recusar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt=""> 
+                                                        <h2>Victor</h2>
+                                                    </td>
+                                                    <td>victor@yahoo.com</td>
+                                                    <td>(32) 8812-9090</td>
+                                                    <td>12/12 - 13:00</td>
+                                                    <td><button class="btn btn-primary btn-primary-two float-right">Aceitar</button></td>
+                                                    <td><button class="btn btn-primary btn-primary-four float-right">Recusar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt=""> 
+                                                        <h2>Ricardo</h2>
+                                                    </td>
+                                                    <td>ricardo@yahoo.com</td>
+                                                    <td>(32) 8812-9090</td>
+                                                    <td>14/11 - 13:00</td>
+                                                    <td><button class="btn btn-primary btn-primary-two float-right">Aceitar</button></td>
+                                                    <td><button class="btn btn-primary btn-primary-four float-right">Recusar</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"></div>
+                            <img src="assets/img/logo-min.png" width="200" height="200" alt="" class="longo-dente">
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>
-    <!--/span-->
-</div><!--/row-->
-
-<div class="row">
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list"></i> Buttons</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content buttons">
-                <p class="btn-group">
-                    <button class="btn btn-default">Left</button>
-                    <button class="btn btn-default">Middle</button>
-                    <button class="btn btn-default">Right</button>
-                </p>
-                <p>
-                    <button class="btn btn-default btn-sm"><i class="glyphicon glyphicon-star"></i> Icon button</button>
-                    <button class="btn btn-primary btn-sm">Small button</button>
-                    <button class="btn btn-danger btn-sm">Small button</button>
-                </p>
-                <p>
-                    <button class="btn btn-warning btn-sm">Small button</button>
-                    <button class="btn btn-success btn-sm">Small button</button>
-                    <button class="btn btn-info btn-sm">Small button</button>
-                </p>
-                <p>
-                    <button class="btn btn-inverse btn-default btn-sm">Small button</button>
-                    <button class="btn btn-primary btn-round btn-lg">Round button</button>
-                    <button class="btn btn-round btn-default btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
-                    <button class="btn btn-primary"><i class="glyphicon glyphicon-edit glyphicon-white"></i></button>
-                </p>
-                <p>
-                    <button class="btn btn-default btn-xs">Mini button</button>
-                    <button class="btn btn-primary btn-xs">Mini button</button>
-                    <button class="btn btn-danger btn-xs">Mini button</button>
-                    <button class="btn btn-warning btn-xs">Mini button</button>
-                </p>
-                <p>
-                    <button class="btn btn-info btn-xs">Mini button</button>
-                    <button class="btn btn-success btn-xs">Mini button</button>
-                    <button class="btn btn-inverse btn-default btn-xs">Mini button</button>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--/span-->
-
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list"></i> Buttons</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content  buttons">
-                <p>
-                    <button class="btn btn-default btn-lg">Large button</button>
-                    <button class="btn btn-primary btn-lg">Large button</button>
-                </p>
-                <p>
-                    <button class="btn btn-danger btn-lg">Large button</button>
-                    <button class="btn btn-warning btn-lg">Large button</button>
-                </p>
-                <p>
-                    <button class="btn btn-success btn-lg">Large button</button>
-                    <button class="btn btn-info btn-lg">Large button</button>
-                </p>
-                <p>
-                    <button class="btn btn-inverse btn-default btn-lg">Large button</button>
-                </p>
-                <div class="btn-group">
-                    <button class="btn btn-default btn-lg">Large Dropdown</button>
-                    <button class="btn dropdown-toggle btn-default btn-lg" data-toggle="dropdown"><span
-                            class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="glyphicon glyphicon-star"></i> Action</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-tag"></i> Another action</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-tint"></i> Separated link</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--/span-->
-
-    <div class="box col-md-4">
-        <div class="box-inner">
-            <div class="box-header well" data-original-title="">
-                <h2><i class="glyphicon glyphicon-list"></i> Weekly Stat</h2>
-
-                <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
-                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
-                </div>
-            </div>
-            <div class="box-content">
-                <ul class="dashboard-list">
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-arrow-up"></i>
-                            <span class="green">92</span>
-                            New Comments
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-arrow-down"></i>
-                            <span class="red">15</span>
-                            New Registrations
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-minus"></i>
-                            <span class="blue">36</span>
-                            New Articles
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-comment"></i>
-                            <span class="yellow">45</span>
-                            User reviews
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-arrow-up"></i>
-                            <span class="green">112</span>
-                            New Comments
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-arrow-down"></i>
-                            <span class="red">31</span>
-                            New Registrations
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-minus"></i>
-                            <span class="blue">93</span>
-                            New Articles
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-comment"></i>
-                            <span class="yellow">254</span>
-                            User reviews
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--/span-->
-</div><!--/row-->
-    <!-- content ends -->
-    </div><!--/#content.col-md-0-->
-</div><!--/fluid-row-->
-
-    <hr>
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h3>Settings</h3>
-                </div>
-                <div class="modal-body">
-                    <p>Here settings can be configured...</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="row">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="http://usman.it" target="_blank">Consultório Odontológico</a></p>
-
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Powered by: <a
-                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
-    </footer>
-
-</div><!--/.fluid-container-->
-
-<!-- external javascript -->
-
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- library for cookie management -->
-<script src="js/jquery.cookie.js"></script>
-<!-- calender plugin -->
-<script src='bower_components/moment/min/moment.min.js'></script>
-<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
-<!-- data table plugin -->
-<script src='js/jquery.dataTables.min.js'></script>
-
-<!-- select or dropdown enhancer -->
-<script src="bower_components/chosen/chosen.jquery.min.js"></script>
-<!-- plugin for gallery image view -->
-<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
-<!-- notification plugin -->
-<script src="js/jquery.noty.js"></script>
-<!-- library for making tables responsive -->
-<script src="bower_components/responsive-tables/responsive-tables.js"></script>
-<!-- tour plugin -->
-<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
-<!-- star rating plugin -->
-<script src="js/jquery.raty.min.js"></script>
-<!-- for iOS style toggle switch -->
-<script src="js/jquery.iphone.toggle.js"></script>
-<!-- autogrowing textarea plugin -->
-<script src="js/jquery.autogrow-textarea.js"></script>
-<!-- multiple file upload plugin -->
-<script src="js/jquery.uploadify-3.1.min.js"></script>
-<!-- history.js for cross-browser state change on ajax -->
-<script src="js/jquery.history.js"></script>
-<!-- application script for Charisma demo -->
-<script src="js/charisma.js"></script>
-
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/Chart.bundle.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
+
+
+
 </html>

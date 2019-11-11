@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Shojumaru);
 
+.login-logo {
+    max-width: 50px;
+    width: auto;
+    height: auto;
+}
+
+.login-top {
+    margin-bottom: 40px;
+}
+
 select {
     background-color: #fff;
 }
@@ -321,14 +331,15 @@ div.center, p.center, img.center {
     font-family: 'Shojumaru', cursive, Arial, serif;
     letter-spacing: 2px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    width: 183px;
+    width: 220px;
     font-size: 17px;
+    margin: 0 5px;
+    margin-top: -4px;
 }
 
 .navbar-brand img {
     float: left;
-    height: 20px;
-    width: 20px;
+    height: 30px;
     margin-right: 5px;
 }
 
@@ -338,11 +349,6 @@ div.center, p.center, img.center {
 
 .theme-container {
     z-index: 5;
-}
-
-.navbar-search {
-    margin-left: 10px;
-    margin-top: 7px;
 }
 
 .navbar-inner {
@@ -397,6 +403,7 @@ ul.ajax-loaders {
 
 
 .login-header {
+    margin-top: 30px;
     padding-top: 30px;
     height: 120px;
 }
@@ -430,11 +437,11 @@ ul.ajax-loaders {
 }
 
 .login-box .input-prepend {
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .login-box .btn {
-    margin-top: 15px;
     width: 100%
 }
 
