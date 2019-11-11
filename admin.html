@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Clínica Odontológica</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.admin.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
@@ -23,85 +23,14 @@
         <div class="header">
 			<div class="header-left">
                 <a href="index-2.html" class="logo">
-                        <img src="assets/img/logo.png" width="38" height="35" alt=""> 
-                        <span><img src="assets/img/logo-nome.png" width="125" height="35"></span>
+                        <img src="assets/img/logo-white.png" width="38" height="35" alt=""> 
+                        <span><img src="assets/img/logo-name.png" width="125" height="35"></span>
                 </a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
             <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
             <ul class="nav user-menu float-right">
-                <li class="nav-item dropdown d-none d-sm-block">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
-                    <div class="dropdown-menu notifications">
-                        <div class="topnav-dropdown-header">
-                            <span>Notificações</span>
-                        </div>
-                        <div class="drop-scroll">
-                            <ul class="notification-list">
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">
-												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
-											</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
-												<p class="noti-time"><span class="notification-time">4 minutos atrás</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
-												<p class="noti-time"><span class="notification-time">6 minutos atrás</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">L</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
-												<p class="noti-time"><span class="notification-time">8 minutos atrás</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">G</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
-												<p class="noti-time"><span class="notification-time">12 minutos atrás</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="notification-message">
-                                    <a href="activities.html">
-                                        <div class="media">
-											<span class="avatar">V</span>
-											<div class="media-body">
-												<p class="noti-details"><span class="noti-title">Júlia Lindoia</span> added new task <span class="noti-title">Private chat module</span></p>
-												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
-											</div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="topnav-dropdown-footer">
-                            <a href="activities.html">Todas Notificações</a>
-                        </div>
-                    </div>
-                </li>
+                
                 
                 <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
@@ -115,7 +44,6 @@
 						<a class="dropdown-item" href="profile.html">Meu Perfil</a>
 						<a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
                         <a class="dropdown-item" href="settings.html">Configurações</a>
-                        <a class="dropdown-item" href="index.html">Página Paciente</a>
 						<a class="dropdown-item" href="index.html">Sair</a>
 					</div>
                 </li>
@@ -135,7 +63,7 @@
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
-                        <li class="menu-title">Main</li>
+                        <li class="menu-title">Menu</li>
                         <li class="active">
                             <a href="index.html"><i class="fa fa-dashboard"></i> <span>Tela Inicial</span></a>
                         </li>
@@ -146,123 +74,61 @@
                             <a href="patients.html"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                         </li>
                         <li>
-                                <a href="calendar.html"><i class="fa fa-calendar"></i> <span>Calendário</span></a>
+                                <a href="agenda.html"><i class="fa fa-calendar"></i> <span>Agenda</span></a>
                         </li>
                         <li>
-                            <a href="appointments.html"><i class="fa fa-calendar"></i> <span>Próximas Consultas</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
+                            <a href="prox-consult.html"><i class="fa fa-calendar"></i> <span>Próximas Consultas</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
                         </li>
                         <li>
-                            <a href="schedule.html"><i class="fa fa-calendar-check-o"></i> <span>Horários Atendimento</span></a>
-                        </li>
-                        <li>
-                            <a href="departments.html"><i class="fa fa-hospital-o"></i> <span>Departments</span></a>
+                            <a href="horarios.html"><i class="fa fa-calendar-check-o"></i> <span>Horários Atendimento</span></a>
                         </li>
 						<li class="submenu">
-							<a href="#"><i class="fa fa-user"></i> <span> Employees </span> <span class="menu-arrow"></span></a>
+							<a href="#"><i class="fa fa-money"></i> <span> Gerenciar Caixa </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">
-								<li><a href="employees.html">Employees List</a></li>
-								<li><a href="leaves.html">Leaves</a></li>
-								<li><a href="holidays.html">Holidays</a></li>
-								<li><a href="attendance.html">Attendance</a></li>
+								<li><a href="ganho.html">Incluir Ganho</a></li>
+								<li><a href="gasto.html">Pagamentos</a></li>
+								<li><a href="caixa.html">Caixa detalhado</a></li>
+								<li><a href="lucros.html">Visualização Lucros</a></li>
 							</ul>
-						</li>
-						<li class="submenu">
-							<a href="#"><i class="fa fa-money"></i> <span> Gerenciar Caixas </span> <span class="menu-arrow"></span></a>
-							<ul style="display: none;">
-								<li><a href="invoices.html">Incluir Ganho</a></li>
-								<li><a href="payments.html">Pagamentos</a></li>
-								<li><a href="expenses.html">Incluir Gastos</a></li>
-								<li><a href="provident-fund.html">Visualização Lucros</a></li>
-							</ul>
+                        </li>
+                        <li>
+                                <a href="procedimentos.html"><i class="fa fa-edit"></i> <span>Procedimentos</span></a>
                         </li>
                         <li class="submenu">
-                                <a href="#"><i class="fa fa-money"></i> <span> Emissões </span> <span class="menu-arrow"></span></a>
+                                <a href="#"><i class="fa fa-book"></i> <span> Emissões </span> <span class="menu-arrow"></span></a>
                                 <ul style="display: none;">
-                                    <li><a href="#">Atestados</a></li>
-                                    <li><a href="#">Prontuários</a></li>
-                                    <li><a href="#">Receitas</a></li>
-                                    <li><a href="#">Taxes</a></li>
-                                    <li><a href="#">Provident Fund</a></li>
+                                    <li><a href="emit-atestado.html">Atestados</a></li>
+                                    <li><a href="emit-prontuario.html">Prontuários</a></li>
+                                    <li><a href="emit-receita.html">Receitas</a></li>
                                 </ul>
                             </li>
 						<li class="submenu">
-							<a href="#"><i class="fa fa-book"></i> <span> Serviços </span> <span class="menu-arrow"></span></a>
+							<a href="#"><i class="fa fa-flag-o"></i> <span> Visualizações </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">
-								<li><a href="salary.html"> Employee Salary </a></li>
-								<li><a href="salary-view.html"> Payslip </a></li>
+								<li><a href="fornecedores.html"> Fornecedores </a></li>
+								<li><a href="estoque.html"> Estoque </a></li>
 							</ul>
 						</li>
-						<li>
-							<a href="assets.html"><i class="fa fa-cube"></i> <span>Casos Ortodônticos</span></a>
-						</li>
-						<li class="submenu">
-							<a href="#"><i class="fa fa-flag-o"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
-							<ul style="display: none;">
-								<li><a href="expense-reports.html"> Expense Report </a></li>
-								<li><a href="invoice-reports.html"> Invoice Report </a></li>
-							</ul>
-						</li>
-                        <li>
-                            <a href="settings.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
-                        </li>
-                        <li class="menu-title">UI Elements</li>
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-laptop"></i> <span> Components</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="uikit.html">UI Kit</a></li>
-                                <li><a href="typography.html">Typography</a></li>
-                                <li><a href="tabs.html">Tabs</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-edit"></i> <span> Forms</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="form-basic-inputs.html">Basic Inputs</a></li>
-                                <li><a href="form-input-groups.html">Input Groups</a></li>
-                                <li><a href="form-horizontal.html">Horizontal Form</a></li>
-                                <li><a href="form-vertical.html">Vertical Form</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-table"></i> <span> Tables</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="tables-basic.html">Basic Tables</a></li>
-                                <li><a href="tables-datatables.html">Data Table</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="menu-title">Extras</li>
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-columns"></i> <span>Pages</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="login.html"> Login </a></li>
-                                <li><a href="register.html"> Register </a></li>
-                                <li><a href="forgot-password.html"> Forgot Password </a></li>
-                                <li><a href="change-password2.html"> Change Password </a></li>
-                                <li><a href="lock-screen.html"> Lock Screen </a></li>
-                                <li><a href="profile.html"> Profile </a></li>
-                                <li><a href="gallery.html"> Gallery </a></li>
-                                <li><a href="error-404.html">404 Error </a></li>
-                                <li><a href="error-500.html">500 Error </a></li>
-                                <li><a href="blank-page.html"> Blank Page </a></li>
-                            </ul>
-                        </li>
+                        <li class="menu-title">Outros</li>
                         <li class="submenu">
                             <a href="javascript:void(0);"><i class="fa fa-share-alt"></i> <span>Cadastros</span> <span class="menu-arrow"></span></a>
                             <ul style="display: none;">
                                 <li>
-                                    <a href="javascript:void(0);"><span>Pacientes</span> <span class="menu-arrow"></span></a>
+                                    <a href="add-patient.html"><span>Pacientes</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);"><span>Fornecedores</span></a>
+                                    <a href="add-fornecedor.html"><span>Fornecedores</span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);"><span>Materiais</span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);"><span>Medicamentos</span></a>
+                                    <a href="add-material.html"><span>Material & Medicamento</span></a>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                                <a href="casos.html"><i class="fa fa-cube"></i> <span>Casos Ortodônticos</span></a>
+                        </li>
+                        <li>
+                                <a href="settings.html"><i class="fa fa-cog"></i> <span>Configurações</span></a>
                         </li>
                     </ul>
                 </div>
@@ -346,7 +212,7 @@
 											<tr>
 												<td style="min-width: 200px;">
 													<a class="avatar" href="profile.html">B</a>
-													<h2><a href="profile.html">Gulherminda Gonçalves <span>Juiz de Fora, MG</span></a></h2>
+													<h2><a href="profile.html">Gulherminda Vidal <span>Juiz de Fora, MG</span></a></h2>
 												</td>                 
 												<td>
 													<h5 class="time-title p-0">Marcado com</h5>
@@ -480,7 +346,7 @@
                         <div class="col-sm-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title d-inline-block">Requisições de consultas </h4> <a href="patients.html" class="btn btn-primary float-right">Visualizar tudo</a>
+                                    <h4 class="card-title d-inline-block">Requisições de consultas </h4>
                                 </div>
                                 <div class="card-block">
                                     <div class="table-responsive">
