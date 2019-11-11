@@ -7,15 +7,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Clínica Odontológica</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-admin.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -138,7 +139,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="page-title">Create Invoice</h4>
+                        <h4 class="page-title">Criar Entrada - Incluir entrada de dinheiro</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -147,7 +148,7 @@
                             <div class="row">
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Patient <span class="text-danger">*</span></label>
+                                        <label>Paciente <span class="text-danger">*</span></label>
                                         <select class="select">
                                             <option>Please Select</option>
                                             <option>Charles Ortega</option>
@@ -158,11 +159,11 @@
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Department <span class="text-danger">*</span></label>
+                                        <label>Especialidade <span class="text-danger">*</span></label>
                                         <select class="select">
                                             <option>Select Department</option>
-                                            <option>Dentists</option>
-                                            <option>Neurology</option>
+                                            <option>Dentista</option>
+                                            <option>Endodontia</option>
                                         </select>
                                     </div>
                                 </div>
@@ -175,30 +176,28 @@
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Tax</label>
+                                        <label>Taxa</label>
                                         <select class="select">
                                             <option>Select Tax</option>
-                                            <option>VAT</option>
-                                            <option>GST</option>
-                                            <option>No Tax</option>
+                                            <option>ICMS</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Patient Address</label>
+                                        <label>Endereço Paciente</label>
                                         <textarea class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Billing Address</label>
+                                        <label>Endereço Faturamento</label>
                                         <textarea class="form-control" rows="3"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Invoice date <span class="text-danger">*</span></label>
+                                        <label>Data Entrada <span class="text-danger">*</span></label>
                                         <div class="cal-icon">
                                             <input class="form-control datetimepicker" type="text">
                                         </div>
@@ -206,7 +205,7 @@
                                 </div>
                                 <div class="col-sm-6 col-md-3">
                                     <div class="form-group">
-                                        <label>Due Date <span class="text-danger">*</span></label>
+                                        <label>Data Confirmação <span class="text-danger">*</span></label>
                                         <div class="cal-icon">
                                             <input class="form-control datetimepicker" type="text">
                                         </div>
@@ -317,8 +316,8 @@
                                 </div>
                             </div>
                             <div class="text-center m-t-20">
-                                <button class="btn btn-grey submit-btn m-r-10">Save & Send</button>
-                                <button class="btn btn-primary submit-btn">Save</button>
+                                <button class="btn btn-grey submit-btn m-r-10">Salvar & Enviar</button>
+                                <button class="btn btn-primary submit-btn">Salvar</button>
                             </div>
                         </form>
                     </div>

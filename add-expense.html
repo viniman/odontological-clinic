@@ -7,15 +7,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Clínica Odontológica</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-admin.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -138,7 +139,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <h4 class="page-title">New Expense</h4>
+                        <h4 class="page-title">Novo Gastos</h4>
                     </div>
                 </div>
                 <div class="row">
@@ -147,13 +148,13 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Item Name</label>
+                                        <label>Item</label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Purchase From</label>
+                                        <label>Gasto com</label>
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
@@ -161,7 +162,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Purchase Date</label>
+                                        <label>Data</label>
                                         <div class="cal-icon">
                                             <input class="form-control datetimepicker" type="text">
                                         </div>
@@ -169,7 +170,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Purchased By </label>
+                                        <label>Comprado por </label>
                                         <select class="select">
                                             <option>Daniel Porter</option>
                                             <option>Roger Dixon</option>
@@ -180,15 +181,15 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Amount</label>
+                                        <label>Quantia</label>
                                         <input placeholder="$50" class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Paid By</label>
+                                        <label>Pago por</label>
                                         <select class="select">
-                                            <option>Cash</option>
+                                            <option>Dinheiro</option>
                                             <option>Cheque</option>
                                         </select>
                                     </div>
@@ -199,14 +200,14 @@
                                     <div class="form-group">
                                         <label>Status</label>
                                         <select class="select">
-                                            <option>Pending</option>
-                                            <option>Approved</option>
+                                            <option>Aguardando</option>
+                                            <option>Aprovado</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Attachments</label>
+                                        <label>Anexos</label>
                                         <input class="form-control" type="file">
                                     </div>
                                 </div>
@@ -224,7 +225,7 @@
                                 </ul>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Create Expense</button>
+                                <button class="btn btn-primary submit-btn">Incluir Gasto</button>
                             </div>
                         </form>
                     </div>
