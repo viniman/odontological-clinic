@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Clínica Odontológica</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.admin.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-admin.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
     <div class="main-wrapper">
         <div class="header">
 			<div class="header-left">
-                <a href="index-2.html" class="logo">
+                <a href="admin.html" class="logo">
                         <img src="assets/img/logo-white.png" width="38" height="35" alt=""> 
                         <span><img src="assets/img/logo-name.png" width="125" height="35"></span>
                 </a>
@@ -64,7 +64,7 @@
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
                         <li class="menu-title">Menu</li>
-                        <li class="active">
+                        <li>
                             <a href="index.html"><i class="fa fa-dashboard"></i> <span>Tela Inicial</span></a>
                         </li>
 						<li>
@@ -86,7 +86,7 @@
 							<a href="#"><i class="fa fa-money"></i> <span> Gerenciar Caixa </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">
 								<li><a href="ganho.html">Incluir Ganho</a></li>
-								<li><a href="gasto.html">Pagamentos</a></li>
+								<li><a href="gasto.html">Incluir Gasto</a></li>
 								<li><a href="caixa.html">Caixa detalhado</a></li>
 								<li><a href="lucros.html">Visualização Lucros</a></li>
 							</ul>
@@ -95,9 +95,9 @@
                                 <a href="procedimentos.html"><i class="fa fa-edit"></i> <span>Procedimentos</span></a>
                         </li>
                         <li class="submenu">
-                                <a href="#"><i class="fa fa-book"></i> <span> Emissões </span> <span class="menu-arrow"></span></a>
-                                <ul style="display: none;">
-                                    <li><a href="emit-atestado.html">Atestados</a></li>
+                                <a href="#"><i class="fa fa-book"></i> <span> Emissões </span> <span class="active subdrop"></span></a>
+                                <ul style="display: block;">
+                                    <li><a class="active" href="emit-atestado.html">Atestados</a></li>
                                     <li><a href="emit-prontuario.html">Prontuários</a></li>
                                     <li><a href="emit-receita.html">Receitas</a></li>
                                 </ul>
@@ -138,7 +138,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-sm-5 col-4">
-                        <h4 class="page-title">Payslip</h4>
+                        <h4 class="page-title">Emissão de Atestado</h4>
                     </div>
                     <div class="col-sm-7 col-8 text-right m-b-30">
                         <div class="btn-group btn-group-sm">
@@ -151,21 +151,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-box">
-                            <h4 class="payslip-title">Payslip for the month of July 2018</h4>
+                            <h4 class="payslip-title">Atestado de Afastamento</h4>
                             <div class="row">
                                 <div class="col-sm-6 m-b-20">
-                                    <img src="assets/img/logo-dark.png" class="inv-logo" alt="">
+                                    <img src="assets/img/logo-min.png" class="inv-logo" alt="">
                                     <ul class="list-unstyled mb-0">
-                                        <li>PreClinic</li>
-                                        <li>3864 Quiet Valley Lane,</li>
-                                        <li>Sherman Oaks, CA, 91403</li>
+                                        <li>Odonto Clinic</li>
+                                        <li>3864 Rua tal,</li>
+                                        <li>Juiz de Fora, MG</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 m-b-20">
                                     <div class="invoice-details">
-                                        <h3 class="text-uppercase">Payslip #49029</h3>
+                                        <h3 class="text-uppercase">Atestado #4029</h3>
                                         <ul class="list-unstyled">
-                                            <li>Salary Month: <span>July, 2018</span></li>
+                                            <li>Data: <span>18, July, 2018</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -175,9 +175,7 @@
                                     <ul class="list-unstyled">
                                         <li>
                                             <h5 class="mb-0"><strong>Albina Simonis</strong></h5></li>
-                                        <li><span>Nurse</span></li>
-                                        <li>Employee ID: NS-0001</li>
-                                        <li>Joining Date: 7 May 2015</li>
+                                        <li>Paciente ID: NS-0001</li>
                                     </ul>
                                 </div>
                             </div>
@@ -238,221 +236,12 @@
                     </div>
                 </div>
             </div>
-            <div class="notification-box">
-                <div class="msg-sidebar notifications msg-noti">
-                    <div class="topnav-dropdown-header">
-                        <span>Messages</span>
-                    </div>
-                    <div class="drop-scroll msg-list-scroll" id="msg_list">
-                        <ul class="list-box">
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">R</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Richard Miles </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item new-message">
-                                        <div class="list-left">
-                                            <span class="avatar">J</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">John Doe</span>
-                                            <span class="message-time">1 Aug</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">T</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Tarah Shropshire </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">M</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Mike Litorus</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">C</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Catherine Manseau </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">D</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Domenic Houston </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">B</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Buster Wigton </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">R</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Rolland Webber </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">C</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author"> Claire Mapes </span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">M</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Melita Faucher</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">J</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Jeffery Lalor</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">L</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Loren Gatlin</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <div class="list-item">
-                                        <div class="list-left">
-                                            <span class="avatar">T</span>
-                                        </div>
-                                        <div class="list-body">
-                                            <span class="message-author">Tarah Shropshire</span>
-                                            <span class="message-time">12:28 AM</span>
-                                            <div class="clearfix"></div>
-                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="topnav-dropdown-footer">
-                        <a href="chat.html">See all messages</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-admin.min.js"></script>
     <script src="assets/js/jquery.slimscroll.js"></script>
     <script src="assets/js/app.js"></script>
 </body>

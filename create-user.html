@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- settings23:07-->
+<!-- change-password24:06-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -21,27 +21,27 @@
 <body>
     <div class="main-wrapper">
         <div class="header">
-			<div class="header-left">
+            <div class="header-left">
                 <a href="admin.html" class="logo">
                     <img src="assets/img/logo-white.png" width="38" height="35" alt=""> 
                     <span><img src="assets/img/logo-name.png" width="125" height="35"></span>
                 </a>
-			</div>
-			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            </div>
+            <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
             <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
             <ul class="nav user-menu float-right">
                 <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                         <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
-							<span class="status online"></span></span>
+                            <span class="status online"></span></span>
                         <span>Usuario</span>
                     </a>
-					<div class="dropdown-menu">
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="profile.html">Meu Perfil</a>
                         <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
                         <a class="dropdown-item" href="settings.html">Configurações</a>
                         <a class="dropdown-item" href="index.html">Sair</a>
-					</div>
+                    </div>
                 </li>
             </ul>
             <div class="dropdown mobile-user-menu float-right">
@@ -62,7 +62,7 @@
                             <a href="admin.html"><i class="fa fa-home back-icon"></i> <span>Voltar</span></a>
                         </li>
                         <li class="menu-title">Configurações</li>
-                        <li class="active">
+                        <li>
                             <a href="settings.html"><i class="fa fa-building"></i> <span>Configurações da Clínica</span></a>
                         </li>
                         <li>
@@ -71,7 +71,7 @@
                         <li>
                             <a href="change-password.html"><i class="fa fa-lock"></i> <span>Modificar Senha</span></a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="create-user.html"><i class="fa fa-user"></i> <span>Criar Usuário</span></a>
                         </li>
                     </ul>
@@ -81,102 +81,48 @@
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="col-md-6 offset-md-3">
+                        <h4 class="page-title">Criação de Usuário</h4>
                         <form>
-                            <h3 class="page-title">Configurações da Clínica</h3>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Nome da Clínica <span class="text-danger">*</span></label>
-                                        <input class="form-control" type="text" value="Cínica Odontológica">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Pessoa Responsável</label>
-                                        <input class="form-control " value="Daniel Boaventura" type="text">
-                                    </div>
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <label>Endereço</label>
-                                        <input class="form-control " value="Rua da Bahia, 240, Juiz de Fora, MG, 36020-000" type="text">
+                                        <label>Nome de usuário</label>
+                                        <input type="password" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>País</label>
+                                        <label>Senha</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Confirme a senha</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 m-t-20">
+                                    <div class="form-group">
+                                        <label>Tipo de Usuário</label>
                                         <select class="form-control select">
-                                            <option>Brasil</option>
-                                            <option>Argentina</option>
-                                            <option>EUA</option>
+                                            <option>Dentista</option>
+                                            <option>Secretária</option>
+                                            <option>Atendente</option>
+                                            <option>Administrador</option>
+                                            <option>Financeiro</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="form-group">
-                                        <label>Cidade</label>
-                                        <input class="form-control" value="Juiz de Fora" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="form-group">
-                                        <label>Estado</label>
-                                        <select class="form-control select">
-                                            <option>Minas Gerais</option>
-                                            <option>Rio de Janeiro</option>
-                                            <option>São Paulo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3">
-                                    <div class="form-group">
-                                        <label>CEP</label>
-                                        <input class="form-control" value="36020-000" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input class="form-control" value="danielporter@example.com" type="email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Telefone</label>
-                                        <input class="form-control" value="32323232" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Celular</label>
-                                        <input class="form-control" value="98989898" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>Fax</label>
-                                        <input class="form-control" value="656565656" type="text">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label>Site</label>
-                                        <input class="form-control" value="https://www.exemplo.com" type="text">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 text-center m-t-20">
-                                    <button type="button" class="btn btn-primary submit-btn">Salvar</button>
+                                    <button type="combobox" class="btn btn-primary submit-btn">Criar usuário</button>
                                 </div>
                             </div>
                         </form>
@@ -195,5 +141,5 @@
 </body>
 
 
-<!-- settings23:11-->
+<!-- change-password24:06-->
 </html>

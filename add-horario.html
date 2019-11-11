@@ -7,22 +7,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <title>Clínica Odontológica</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.admin.min.css">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-admin.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
     <div class="main-wrapper">
         <div class="header">
 			<div class="header-left">
-                <a href="index-2.html" class="logo">
+                <a href="admin.html" class="logo">
                         <img src="assets/img/logo-white.png" width="38" height="35" alt=""> 
                         <span><img src="assets/img/logo-name.png" width="125" height="35"></span>
                 </a>
@@ -64,8 +65,8 @@
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
                         <li class="menu-title">Menu</li>
-                        <li class="active">
-                            <a href="index.html"><i class="fa fa-dashboard"></i> <span>Tela Inicial</span></a>
+                        <li>
+                            <a href="admin.html"><i class="fa fa-dashboard"></i> <span>Tela Inicial</span></a>
                         </li>
 						<li>
                             <a href="dentists.html"><i class="fa fa-user-md"></i> <span>Dentistas</span></a>
@@ -79,14 +80,14 @@
                         <li>
                             <a href="prox-consult.html"><i class="fa fa-calendar"></i> <span>Próximas Consultas</span> <span class="badge badge-pill bg-primary float-right">5</span></a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="horarios.html"><i class="fa fa-calendar-check-o"></i> <span>Horários Atendimento</span></a>
                         </li>
 						<li class="submenu">
 							<a href="#"><i class="fa fa-money"></i> <span> Gerenciar Caixa </span> <span class="menu-arrow"></span></a>
 							<ul style="display: none;">
 								<li><a href="ganho.html">Incluir Ganho</a></li>
-								<li><a href="gasto.html">Pagamentos</a></li>
+								<li><a href="gasto.html">Incluir Gasto</a></li>
 								<li><a href="caixa.html">Caixa detalhado</a></li>
 								<li><a href="lucros.html">Visualização Lucros</a></li>
 							</ul>
@@ -138,22 +139,78 @@
             <div class="content">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <h4 class="page-title">Add Leave Type</h4>
+                        <h4 class="page-title">Add Schedule</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <form>
-                            <div class="form-group">
-                                <label>Leave Type <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+										<label>Doctor Name</label>
+										<select class="select">
+											<option>Select</option>
+											<option>Doctor Name 1</option>
+											<option>Doctor Name 2</option>
+										</select>
+									</div>
+                                </div>
+                                <div class="col-md-6">
+									<div class="form-group">
+										<label>Available Days</label>
+										<select class="select" multiple>
+											<option>Select Days</option>
+											<option>Sunday</option>
+											<option>Monday</option>
+											<option>Tuesday</option>
+											<option>Wednesday</option>
+											<option>Thursday</option>
+											<option>Friday</option>
+											<option>Saturday</option>
+										</select>
+									</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Start Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>End Time</label>
+                                        <div class="time-icon">
+                                            <input type="text" class="form-control" id="datetimepicker4">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label>Number of days <span class="text-danger">*</span></label>
-                                <input class="form-control" type="text">
+                                <label>Message</label>
+                                <textarea cols="30" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="display-block">Schedule Status</label>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="status" id="product_active" value="option1" checked>
+									<label class="form-check-label" for="product_active">
+									Active
+									</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="status" id="product_inactive" value="option2">
+									<label class="form-check-label" for="product_inactive">
+									Inactive
+									</label>
+								</div>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Add Leave Type</button>
+                                <button class="btn btn-primary submit-btn">Create Schedule</button>
                             </div>
                         </form>
                     </div>
@@ -164,12 +221,24 @@
     <div class="sidebar-overlay" data-reff=""></div>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-admin.min.js"></script>
     <script src="assets/js/jquery.slimscroll.js"></script>
     <script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/app.js"></script>
+	<script>
+            $(function () {
+                $('#datetimepicker3').datetimepicker({
+                    format: 'LT'
+                });
+				$('#datetimepicker4').datetimepicker({
+                    format: 'LT'
+                });
+            });
+     </script>
 </body>
 
 
-<!-- add-leave-type24:13-->
+<!-- add-schedule24:07-->
 </html>
